@@ -8,6 +8,7 @@ Pod::Spec.new do |s|
   s.license          = { :type => 'BSD', :file => 'COPYING' }
   s.source           = { :git => 'https://chromium.googlesource.com/webm/libwebp', :tag => 'v' + s.version.to_s }
   s.cocoapods_version = '>= 1.9.1'
+  s.source_files = 'libwebp/WebPDemux.framework/Headers/*.h', 'libwebp/WebP.framework/Headers/encode.h', 'libwebp/WebPMux.framework/Headers/mux.h'
   s.public_header_files = 'libwebp/WebPDemux.framework/Headers/*.h', 'libwebp/WebP.framework/Headers/encode.h', 'libwebp/WebPMux.framework/Headers/mux.h'
   s.vendored_frameworks = 'libwebp/*.framework'
   s.preserve_paths      = 'libwebp/*.framework'
